@@ -13,7 +13,7 @@ The goal of this repository is to generalize that project-specific pipeline into
 
 Early-stage, actively developed. The underlying robustness-evaluation pipeline (PyTorch, ResNet50-based) is built and has already surfaced a concrete failure mode:
 
-- Under increasing blur, AUROC drops from ~0.85 to ~0.51 (indistinguishable from chance), while specificity collapses from ~0.71 to ~0.21 even though sensitivity holds close to baseline. The model starts to miss a lot of predictions
+- Under increasing blur, AUROC drops from ~0.85 to ~0.51 (indistinguishable from chance), while specificity collapses from ~0.71 to ~0.21 even though sensitivity holds close to baseline. The model starts to miss a lot of accurate predictions
 - Brightness changes are comparatively well tolerated; contrast has a moderate but real effect.
 
 This repository is where that pipeline is being generalized into a documented, reusable tool, using the SSI-detection model as the first test case.
